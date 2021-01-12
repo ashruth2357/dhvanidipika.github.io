@@ -15,9 +15,46 @@
   <link href="css/one-page-wonder.min.css" rel="stylesheet">
 </head>
 <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://webolim.org">Webolim</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+      <header class="masthead text-center text-white">
+        <div class="masthead-content">
+          <div class="container">
+            <h1 class="masthead-heading mb-0">Mandala 1</h1>
+          </div>
+        </div>
+        <div class="bg-circle-4 bg-circle"></div>
+      </header>
     <div id="suktaTable" class="container">
      
     </div>
+
+    <footer class="py-5 bg-black">
+        <div class="container">
+          <p class="m-0 text-center text-white small">Copyright &copy; Your Website 2020</p>
+        </div>
+        <!-- /.container -->
+      </footer>
     <script>
         var totSuktams = 191;
         var totRows = Math.round(totSuktams/12);
@@ -40,8 +77,7 @@
             innerHTML += innerRow;
         }
         
-         
-        
+          
         document.getElementById("suktaTable").innerHTML = innerHTML;
 
         
