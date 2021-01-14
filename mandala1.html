@@ -31,6 +31,7 @@
             <ul class="navbar-nav ml-auto">
             <li class="nav-item">
                 <a class="nav-link" href="D:\AmruthProjects\DhvaniDeepika\index.html">Home</a>
+                <a href="rigveda/pdf/Mandala1/"></a>
   
               </li>
               <li class="nav-item">
@@ -71,7 +72,7 @@
             var innerCol = ""
             for (var c=0;c<12;c++)   {
                 if (varSukta <= totSuktams) {
-                    innerCol = "<div class='col'><a href='pdf/Mandala1/"+ varSukta +".pdf'>" + varSukta + " </a></div>";
+                    innerCol = "<div class='col'><a href='rigveda/pdf/Mandala1'"+ varSukta +".pdf'>" + varSukta + " </a></div>";
                     varSukta++;
                     
                 } else {
@@ -83,7 +84,7 @@
             innerHTML += innerRow;
         }
         
-          
+        
         document.getElementById("suktaTable").innerHTML = innerHTML;
 
         
